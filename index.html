@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Profumo Perfetto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Pagina 1: Introduzione -->
+    <div id="pagina1">
+        <h1>Benvenuto nell'App "Il Profumo Perfetto"</h1>
+        <p>Scopri il profumo che riflette al meglio la tua personalità rispondendo a 6 semplici domande.</p>
+        <button onclick="vaiAlTest()">Inizia il Test</button>
+    </div>
+
+    <!-- Pagina 2: Test -->
+    <div id="pagina2" style="display:none;">
+        <h1>Il Test del Profumo Perfetto</h1>
+        <form id="quizForm">
+            <!-- Domanda 1 -->
+            <label>Dove preferisci trascorrere il tuo tempo libero?</label><br>
+            <input type="radio" name="q1" value="mare"> Mare<br>
+            <input type="radio" name="q1" value="montagna"> Montagna<br>
+            <input type="radio" name="q1" value="città"> Città<br><br>
+
+            <!-- Domanda 2 -->
+            <label>Quale nota profumata ti attira di più?</label><br>
+            <input type="radio" name="q2" value="floreale"> Floreale<br>
+            <input type="radio" name="q2" value="agrumata"> Agrumata<br>
+            <input type="radio" name="q2" value="legnosa"> Legnosa<br><br>
+
+            <!-- Domanda 3 -->
+            <label>Cosa ti rilassa maggiormente?</label><br>
+            <input type="radio" name="q3" value="lavanda"> Lavanda<br>
+            <input type="radio" name="q3" value="vaniglia"> Candele alla vaniglia<br>
+            <input type="radio" name="q3" value="oli"> Oli essenziali<br><br>
+
+            <!-- Domanda 4 -->
+            <label>Che tipo di fragranza preferisci al mattino?</label><br>
+            <input type="radio" name="q4" value="fresca"> Fresca e frizzante<br>
+            <input type="radio" name="q4" value="dolce"> Dolce e calda<br>
+            <input type="radio" name="q4" value="speziata"> Speziata<br><br>
+
+            <!-- Domanda 5 -->
+            <label>Qual è il ricordo più forte legato a una fragranza?</label><br>
+            <input type="radio" name="q5" value="bucato"> Profumo di bucato fresco<br>
+            <input type="radio" name="q5" value="naturali"> Aromi naturali<br>
+            <input type="radio" name="q5" value="legni"> Fragranze di spezie o legni<br><br>
+
+            <!-- Domanda 6 -->
+            <label>Quale emozione vuoi evocare con il profumo?</label><br>
+            <input type="radio" name="q6" value="felicità"> Felicità<br>
+            <input type="radio" name="q6" value="energia"> Energia<br>
+            <input type="radio" name="q6" value="comfort"> Comfort<br><br>
+
+            <button type="button" onclick="calcolaProfumo()">Scopri il tuo profumo</button>
+        </form>
+    </div>
+
+    <!-- Pagina 3: Risultato -->
+    <div id="pagina3" style="display:none;">
+        <h1>Il tuo profumo perfetto è:</h1>
+        <h2 id="risultatoProfumo"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
